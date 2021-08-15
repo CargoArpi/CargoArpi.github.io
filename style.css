@@ -1,105 +1,44 @@
-* {
-    box-sizing: border-box;
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
 }
-body {
-    margin: 0;
-    background: radial-gradient(ellipse at center, rgba(72,109,137,1) 0%, rgba(72,109,137,1) 17%, rgba(0,39,66,1) 89%, rgba(0,39,66,1) 100%);
-    font-family: 'Roboto-Regular.ttf';
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-img{
-    max-width: 100%;
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url("https://www.w3schools.com/w3images/parallax1.jpg");
+  min-height: 100%;
 }
-h1 {
-    font-family:cursive;
-    text-align: center;
-    font-size: 70px;
-    border-top: 2px dashed rgba(0, 0, 0, .3);
-    border-bottom: 2px dashed rgba(0, 0, 0, .2);
-    padding: 40px, 0;
-    margin: 50px, 0;
-    background-color: rgba(255, 255, 255, .1);
-    color: rgb(20, 70, 42);
-    font-weight: bolder;
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("https://www.w3schools.com/w3images/parallax2.jpg");
+  min-height: 400px;
 }
-h2{
-    color: rgb(82, 82, 82);
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("https://www.w3schools.com/w3images/parallax3.jpg");
+  min-height: 400px;
 }
-.wrapper {
-    
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
 }
-.content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: stretch;
-    
-}
-nav {
-    background-color: rgba(0, 0, 0, .2);
-    margin: 0 20px;
-    align-self: auto;
-    flex: 0 1 auto;
-}
-nav li{
-    border-bottom: 1px solid rgba(0, 0, 0, .4); 
-}
-nav ul{
-    margin: 0;
-    list-style: none;
-    padding: 30px 10px 10px 10px;
-}
-nav a:hover {
-    background: rgba(255, 255, 255, .2);
-}
-nav a{
-    text-decoration: none;
-    color: white;
-    padding: 15px;
-    display: block;
-}
-main{
-    
-    margin: 0 20px;
-    flex: 0 1 auto ;
-    align-self: auto;
-}
-.leiras-box{
-    flex: 1;
-    background: rgba(255, 255, 255, .5);
-    border: 1px solid #ddd;
-    box-shadow: 0 0 30px rgba(255, 255, 255, .5);
-    padding: 0 0 10px 0;
-    margin: 0 10px 20px 10px;
-    max-width: 200vw;
-    font-family: cursive;
-}
-.leiras{
-    display: flex;
-    flex-wrap: wrap;
-}    
-aside{
-    background-color: rgba(0, 0, 0, .1);
-    margin: 0 20px;
-    align-self: auto;
-    flex: 0 1 auto;
-}
-aside ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-aside a{
-    display: block;
-    color:whitesmoke;
-    font-size: 14px;
-    text-decoration: none;
-    line-height: 20px;
-}
-aside a:hover{
-    text-decoration: underline;
-}
-aside li{
-    padding: 15px 15px;
-    border-bottom: 1px solid rgba(255, 255, 255, .2);
-}
+   
