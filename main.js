@@ -1,7 +1,7 @@
 function validateForm() {
     let price = 1000
     let amountInput = document.querySelector("#topamount")
-    let showamount = document.querySelector("span.showamount")
+    let showamount = document.querySelector("h2.showamount")
     let amountNumber = parseInt(amountInput.value)
     amountNumber = isNaN(amountNumber) ? 0 : amountNumber
     if (amountNumber > 10) {

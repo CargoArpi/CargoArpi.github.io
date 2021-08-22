@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
@@ -22,13 +23,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Rendelés</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">rendelés</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="about.html">rólunk</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="contact.html" tabindex="-1">Contact</a>
+                        <a class="nav-link " href="contact.html" tabindex="-1">kapcsolat</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -40,50 +41,38 @@
     </nav>
     <div class="container">
         <div class="row">
-            <div class="col-3"></div>
-            <div class="col-3">
-                <form action="" class="form-control">
-                    <h4>Személyes adatok</h4>
+            <div class="col-4"><h2>Minden hambi 1000 Ft</h2>
+                                <h2>Minden feltét 300 Ft</h2>
+            </div>
+            <div class="col-4">
+                <form action="" class="form-control form-control-sm">
+                    <h4>Hamburger rendelés</h4>
                     <div>
                         <label for="name" class="form-label">Név</label>
-                        <input class="form-control" type="name" id="name" name="text" required>
+                        <input class="form-control form-control-sm" type="name" id="name" name="text" required>
                     </div>
                     <div>
                         <label for="email">Email cím</label>
-                        <input class="form-control" type="email" id="email" name="email" required>
+                        <input class="form-control form-control-sm" type="email" id="email" name="email" required>
                     </div>
                     <div>
                         <label class="form-label" for="address">Cím</label>
-                        <input class="form-control" type="text" id="address" name="address" required>
+                        <input class="form-control form-control-sm" type="text" id="address" name="address" required>
                     </div>
                     <div>
                         <label class="form-label" for="comment">Megjegyzés</label>
-                        <textarea class="form-control" name="comment" id="comment" rows="2"></textarea>
+                        <textarea class="form-control form-control-sm" name="comment" id="comment" rows="2"></textarea>
                     </div>
-                    <button type="button" class="btn btn-primary">Küldés</button>
-                </form>
-                
-            </div>
-            <div class="col-3">
 
-                <form action="" class="form-control">
-                    <h4>Hamburger rendelés</h4>
-                    <div class="form-group">
-                        <label for="top-input">Feltét</label>
-                        <input type="text" name="top-input" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="amount-input">Mennyiség</label>
-                        <input type="number" name="amount-input" class="form-control" id="topamount" value="1">
-                    </div>
+                    <label for="amount-input">Mennyiség</label>
+                    <input type="number" name="amount-input" class="form-control form-control-sm" id="topamount"
+                        value="1">
+
+
                     <small class="form-text text-muted">(Minimum 1, maximum 10 rendelhető) </small>
-                    <div class="showamount">
-                        Fizetendő: <span class="showamount">0</span>Ft
-                            
-                        
-                    </div>
+                    
 
-                    <!--<h5>Feltét adatai</h5>
+                    <h6>Feltét adatai</h6>
                     <div class="form-check">
                         <input class="form-check-input" checked type="radio" id="nothing" name="extra">
                         <label for="nothing" class="form-checked-label">Nem kérek</label>
@@ -103,12 +92,18 @@
                     <div>
                         <input class="form-check-input" type="radio" id="double-double" name="extra">
                         <label class="form-check-label" for="double-double">Dupla dupla</label>
-                    </div>-->
-                    <button type="button" class="btn btn-primary" onclick="validateForm()">Rendelés</button>
+                    </div>
+                    <div class="showamount">
+                        Fizetendő: <h2 class="showamount">0 </h2> Ft
+                    </div>
+                    <div><button type="button" class="btn btn-primary" onclick="validateForm()">Rendelés</button></div>
+                    
                 </form>
             </div>
-            <div class="col-3"></div>
+            <div class="col-4"><small>Házhozszállítás 200 Ft a városban, de 5000 Ft felett ingyenes!</small></div>
         </div>
+        </form>
+    </div>
 
 
     </div>
