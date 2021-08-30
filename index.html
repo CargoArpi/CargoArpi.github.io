@@ -41,8 +41,9 @@
     </nav>
     <div class="container">
         <div class="row">
-            <div class="col-4"><h2>Minden hambi 1000 Ft</h2>
-                                <h2>Minden feltét 300 Ft</h2>
+            <div class="col-4">
+                <h2>Minden hambi 1000 Ft</h2>
+
             </div>
             <div class="col-4">
                 <form action="" class="form-control form-control-sm">
@@ -63,41 +64,25 @@
                         <label class="form-label" for="comment">Megjegyzés</label>
                         <textarea class="form-control form-control-sm" name="comment" id="comment" rows="2"></textarea>
                     </div>
+                    <div>
+                        <label for="amount-input">Mennyiség</label>
+                        <input type="number" name="amount-input" class="form-control form-control-sm" id="topamount"
+                            value="1">
 
-                    <label for="amount-input">Mennyiség</label>
-                    <input type="number" name="amount-input" class="form-control form-control-sm" id="topamount"
-                        value="1">
-
-
-                    <small class="form-text text-muted">(Minimum 1, maximum 10 rendelhető) </small>
-                    
-
-                    <h6>Feltét adatai</h6>
-                    <div class="form-check">
-                        <input class="form-check-input" checked type="radio" id="nothing" name="extra">
-                        <label for="nothing" class="form-checked-label">Nem kérek</label>
+                        <small class="form-text text-muted">(Minimum 1, maximum 10 rendelhető) </small>
                     </div>
                     <div>
-                        <input class="form-check-input" type="radio" id="cheese" name="extra">
-                        <label class="form-check-label" for="cheese">Sajtos</label>
+                        <label class="form-label" for="Feltét">Feltét</label>
+                        <select name="bottominput" id="bottominput" class="form-control form-control-sm"></select>
                     </div>
-                    <div>
-                        <input class="form-check-input" type="radio" id="double-cheese" name="extra">
-                        <label class="form-check-label" for="double-cheese">Dupla sajtos</label>
-                    </div>
-                    <div>
-                        <input class="form-check-input" type="radio" id="double-meat" name="extra">
-                        <label class="form-check-label" for="double-meat">Dupla húsos</label>
-                    </div>
-                    <div>
-                        <input class="form-check-input" type="radio" id="double-double" name="extra">
-                        <label class="form-check-label" for="double-double">Dupla dupla</label>
-                    </div>
+
+
                     <div class="showamount">
                         Fizetendő: <h2 class="showamount">0 </h2> Ft
                     </div>
-                    <div><button type="button" class="btn btn-primary" onclick="validateForm()">Rendelés</button></div>
-                    
+                    <button type="button" class="btn btn-primary" onclick="validateForm()">Összeg számítása</button>
+                    <button type="button" class="btn btn-primary" onclick="validateForm()">Rendelés</button>
+
                 </form>
             </div>
             <div class="col-4"><small>Házhozszállítás 200 Ft a városban, de 5000 Ft felett ingyenes!</small></div>
