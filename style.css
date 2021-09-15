@@ -1,1 +1,64 @@
-.showamount {display:inline-block}
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    background: linear-gradient(90deg, rgba(141, 119, 136, 1) 18%, rgba(255, 104, 125, 1) 41%);
+    
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-left: 1px solid rgba(255, 255, 255, 0.3) ;
+    border-top: 1px solid rgba(255, 255, 255, 0.3) ;
+    box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: 120px;
+    top: 90px;
+    position: relative;    
+} 
+.circle2 {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    background: rgba(15, 15, 100, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.4) ;
+    left: 150px;
+    bottom: -120px; 
+    position: relative;  
+    z-index: 3;
+}
+.circle3 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(10, 10, 100, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2) ;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 20px;
+    right: 410px;
+    top: -150px; 
+    position: relative; 
+    z-index: 2; 
+}      
+.rect {
+    position: absolute;
+    padding: 8em;
+    height: 320px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    
+}
