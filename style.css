@@ -3,8 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
 .container {
-    background: linear-gradient(90deg, rgba(141, 119, 136, 1) 18%, rgba(255, 104, 125, 1) 41%);
+    background: linear-gradient(90deg, rgb(137, 119, 141) 18%, rgb(78, 114, 212) 41%);
     
     width: 100vw;
     height: 100vh;
